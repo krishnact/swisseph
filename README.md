@@ -6,12 +6,20 @@ The license seems to pretty open. Please visit http://th-mack.de/international/d
 I put it so that it is possible to use this package with maven. 
 How to use?
 
-1. Add jitpack repostitory in your pom.xml:
+Add jitpack repostitory in your pom.xml:
+```xml
 	<repositories>
 		<repository>
 			<id>jitpack.io</id>
 			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
-
-2. Add dependency:
+```
+And then add dependency:
+```xml
+		<dependency>
+			<groupId>com.github.krishnact</groupId>
+			<artifactId>swisseph</artifactId>
+			<version>-SNAPSHOT</version>
+		</dependency>
+```
