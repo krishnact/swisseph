@@ -468,11 +468,11 @@ class FileData implements java.io.Serializable {
 			}
 		} catch (java.io.IOException e) {
 			label_file_damage(serr, " (6a)");
-			System.out.println(e.getMessage());
+			//System.out.println(e.getMessage());
 			throw new SwissephException(tfstart, SwissephException.DAMAGED_FILE_ERROR, SweConst.ERR, serr);
 		} catch (Exception e) {
 			label_file_damage(serr, " (6c)");
-			System.out.println(e);
+			//System.out.println(e);
 			throw new SwissephException(tfstart, SwissephException.DAMAGED_FILE_ERROR, SweConst.ERR, serr);
 		}
 		return SweConst.OK;
@@ -489,7 +489,7 @@ class FileData implements java.io.Serializable {
 			}
 		}
 		clearData();
-		System.out.println(serr);
+		//System.out.println(serr);
 		return SweConst.ERR;
 	}
 

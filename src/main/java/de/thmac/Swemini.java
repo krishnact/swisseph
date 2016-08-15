@@ -116,7 +116,7 @@ public class Swemini implements java.io.Serializable {
 				BufferedReader bin = new BufferedReader(in);
 				sdate = bin.readLine();
 			} catch (IOException ie) {
-				System.out.println(ie.getMessage());
+				//System.out.println(ie.getMessage());
 				System.exit(SweConst.OK);
 			}
 			if ("".equals(sdate))
